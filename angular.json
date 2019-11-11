@@ -25,7 +25,11 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "helix-ui.min.css", "input": "node_modules/helix-ui/dist/css/", "output": "helix-ui/" },
+              { "glob": "helix-ui.min.js", "input": "node_modules/helix-ui/dist/js/", "output": "helix-ui/" },
+              { "glob": "custom-elements-es5-adapter.js", "input": "node_modules/@webcomponents/webcomponentsjs/", "output": "webcomponents/" },
+              { "glob": "webcomponents-loader.js", "input": "node_modules/@webcomponents/webcomponentsjs/", "output": "webcomponents/" }
             ],
             "styles": [
               "src/styles.scss"
